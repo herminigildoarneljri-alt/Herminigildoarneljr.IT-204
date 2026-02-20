@@ -1,0 +1,61 @@
+
+  
+
+
+
+#parent{
+    background-color: beige;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        'header header'
+        'navigation content'
+        'footer footer';
+}
+
+#header{
+    grid-area: header;
+    background-color: black;
+    color: beige;
+    text-align: center;
+    
+}
+
+#navigation{
+    grid-area: navigation;
+    background-color: gray;
+}
+
+#content{
+    grid-area: content;
+    background-color: azure;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: beige;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.display-section{
+  background-color:brown;
+  color:white;
+  display:flex ;
+  margin: 0vh;
+  justify-content: space-between;
+  padding-block: 1fr;
+  table-layout: line;
+  
+
+  
+}
+#list th{
+  border: 5px solid black;
+}
