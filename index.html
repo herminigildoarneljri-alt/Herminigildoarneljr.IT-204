@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Css Grid</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.slim.js" integrity="sha256-M+GjhMBfXikM1izMplICCTscIj5hzPCp6uDzaypxtgg=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="page">
+    <div id="parent">
+        <div id="header"><h1>Home Page</h1></div>
+        
+        <div id="navigation">
+          <div> <a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+          <div> <a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Log In</a></div>
+          <div> <a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a></div>
+          <div> <a href="about.html"><i class="fa-solid fa-person"></i>About Me</a></div>
+          <div> <a href="exitpage.html"><i class="fa-solid fa-circle-left"></i>Back to home</a></div>
+        </div>
+        
+        <div id="content">
+          <h3>Content </h3>
+          <p>This is Sample Paragraph</p>
+                <div>
+                <h2>Please Enter Information</h2>
+                <div class="input-group">
+                    <input type="text" id="fname" placeholder="firstname">
+                    <input type="text" id="mname" placeholder="middlename">
+                    <input type="text" id="lname" placeholder="lastname">
+                    <input type="number" id="age" placeholder="age">
+                    <input type="email" id="email" placeholder="email">
+                    <button onclick="processData()" class="save-btn">Save 🔒</button>
+                </div>
+            </div>
+            
+                     <h4>Saved Persons Data</h4>
+               <div class="display-section">
+                
+                 <table>
+                    <thead>
+                      
+                        <tr id="list">
+                            <th>Firstname</th>
+                            <th>Middlename</th>
+                            <th>Surename</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                        </tr>
+                        <tbody id="tableBody"></tbody>
+                        
+                    </thead>
+                  
+                </table>
+        </div>
+        </div>
+        
+        <div class="footer">
+          
+          <div><a href="https://www.facebook.com/">Facebook</a></div>
+          <div><a href="https://www.instagram.com/?hl=en">Instagram</a></div>
+          <div><a href="https://www.youtube.com/">Youtube</a></div>
+          <div><a href="https://www.tiktok.com">Tiktok</a></div>
+          
+    </div>
+</body>
+</html>
+
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
